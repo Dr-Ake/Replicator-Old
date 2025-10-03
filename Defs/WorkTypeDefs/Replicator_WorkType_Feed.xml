@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Hidden by default; visibility toggled by settings -->
+  <WorkTypeDef>
+    <defName>ReplicatorFeed</defName>
+    <labelShort>Rep feed</labelShort>
+    <pawnLabel>replicator feeding</pawnLabel>
+    <gerundLabel>feeding replicator</gerundLabel>
+    <visible>true</visible>
+    <naturalPriority>350</naturalPriority>
+    <alwaysStartActive>false</alwaysStartActive>
+    <workTags>None</workTags>
+  </WorkTypeDef>
+</Defs>

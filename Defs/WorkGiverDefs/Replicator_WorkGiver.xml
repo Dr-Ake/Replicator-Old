@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- WorkGiver for stabilization `n  Safe to change: label, workType, priorityInType `n  Do not change: defName, giverClass `n-->
+<Defs>
+  <WorkGiverDef>
+    <defName>WorkGiver_StabilizeReplicator</defName>
+    <label>stabilize replicator</label>
+    <giverClass>Replicator.WorkGiver_StabilizeReplicator</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>90</priorityInType>
+    <verb>stabilize</verb>
+    <gerund>stabilizing</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <scanThings>true</scanThings>
+    <scanCells>false</scanCells>
+  </WorkGiverDef>
+</Defs>

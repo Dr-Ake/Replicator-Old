@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- WorkGiver for feeding items to the Replicator `n  Safe to change: label, workType, priorityInType `n  Do not change: defName, giverClass `n-->
+<Defs>
+  <WorkGiverDef>
+    <defName>WorkGiver_FeedReplicator</defName>
+    <label>feed item to replicator</label>
+    <giverClass>Replicator.WorkGiver_FeedReplicator</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>95</priorityInType>
+    <verb>feed</verb>
+    <gerund>feeding</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <scanThings>true</scanThings>
+    <scanCells>false</scanCells>
+  </WorkGiverDef>
+</Defs>

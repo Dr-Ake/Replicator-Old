@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- High-priority DoBill pass focused on Replicator only -->
+  <WorkGiverDef>
+    <defName>WorkGiver_DoBill_Replicator</defName>
+    <label>operate replicator (bills)</label>
+    <giverClass>Replicator.WorkGiver_DoBill_Replicator</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>100</priorityInType>
+    <verb>replicate</verb>
+    <gerund>replicating</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <scanThings>true</scanThings>
+    <scanCells>false</scanCells>
+  </WorkGiverDef>
+</Defs>
+

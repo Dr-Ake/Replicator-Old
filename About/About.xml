@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Replicator</name>
+    <packageId>Drake.Replicator</packageId>
+    <author>Drake</author>
+    
+    <description>
+        A Star Trek-style replicator that can replicate any item after analyzing it.
+        Feed items to the replicator to add them to its database, then replicate them using electricity.
+        Stabilization time and energy costs scale with item rarity.
+    </description>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>brrainz.harmony</li>
+    </loadAfter>
+</ModMetaData>

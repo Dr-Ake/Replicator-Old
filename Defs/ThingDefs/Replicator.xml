@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Replicator building def
+  Safe to change:
+    - label, description, graphics, costList, researchPrerequisites, constructionSkillPrerequisite
+    - power draw values under <comps>/<CompProperties_Power>
+  Do not change:
+    - defName (referenced by code and dynamic recipes)
+    - thingClass (must be Building_WorkTable)
+    - comp classes under <comps>
+    - inspectorTabs entries
+-->
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Replicator</defName> <!-- DO NOT CHANGE -->
+    <label>replicator</label>
+    <description>A Star Trek-style replicator that can analyze and replicate items. Feed it items to add them to its database, then replicate them using electricity. Research time and energy costs scale with item rarity.</description>
+    <thingClass>Building_WorkTable</thingClass> <!-- DO NOT CHANGE -->
+    <category>Building</category>
+    <designationCategory>Production</designationCategory>
+    <tickerType>Normal</tickerType>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <size>(2,2)</size>
+    <graphicData>
+      <!-- Use a unique texture path to avoid colliding with vanilla/DLC directories -->
+      <texPath>Replicator/Replicator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <Mass>50</Mass>
+    </statBases>
+    <costList>
+      <Steel>200</Steel>
+      <Gold>50</Gold>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <building>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+            <!-- Power behavior. Safe to tweak draw values. Keep compClass unchanged. -->
+      <li Class="CompProperties_Power">
+        <compClass>Replicator.CompPowerTraderDynamic</compClass> <!-- DO NOT CHANGE -->
+        <basePowerConsumption>100</basePowerConsumption>
+        <idlePowerDraw>10</idlePowerDraw>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+            <li Class="Replicator.CompProperties_Replicator" />
+    </comps>
+    <inspectorTabs>
+      <li>Replicator.ITab_Replicator</li>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <passability>PassThroughOnly</passability>
+  </ThingDef>
+
+</Defs>
+
+
+
+
+

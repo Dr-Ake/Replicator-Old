@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Hidden by default; visibility toggled by settings -->
+  <WorkTypeDef>
+    <defName>ReplicatorOperate</defName>
+    <labelShort>Rep use</labelShort>
+    <pawnLabel>replicator operation</pawnLabel>
+    <gerundLabel>operating replicator</gerundLabel>
+    <visible>true</visible>
+    <naturalPriority>405</naturalPriority>
+    <alwaysStartActive>false</alwaysStartActive>
+    <workTags>None</workTags>
+  </WorkTypeDef>
+</Defs>

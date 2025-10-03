@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Replicator job defs `n  Do not change: defName or driverClass. It breaks job assignment. `n  You may tweak reportString. `n-->
+<Defs>
+
+  <JobDef>
+    <defName>FeedReplicator</defName>
+    <driverClass>Replicator.JobDriver_FeedReplicator</driverClass>
+    <reportString>feeding TargetA to replicator.</reportString>
+    
+    
+    
+    
+    
+  </JobDef>
+
+  <JobDef>
+    <defName>StabilizeReplicator</defName>
+    <driverClass>Replicator.JobDriver_StabilizeReplicator</driverClass>
+    <reportString>stabilizing TargetA in replicator.</reportString>
+
+
+
+
+
+  </JobDef>
+
+  <JobDef>
+    <defName>ReplicateInstant</defName>
+    <driverClass>Replicator.JobDriver_ReplicateInstant</driverClass>
+    <reportString>replicating item.</reportString>
+  </JobDef>
+
+  <JobDef>
+    <defName>ReplicateBulkInstant</defName>
+    <driverClass>Replicator.JobDriver_ReplicateBulkInstant</driverClass>
+    <reportString>replicating bulk batch.</reportString>
+  </JobDef>
+
+</Defs>
